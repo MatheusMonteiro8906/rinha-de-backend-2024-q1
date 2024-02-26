@@ -10,11 +10,14 @@ namespace RinhaDeBackendApi.Models
         public int Valor { get; set; }
 
         [Required(ErrorMessage = "O tipo da transação é obrigatório.")]
-        public string Tipo { get; set; }
+        public char Tipo { get; set; }
 
         [Required(ErrorMessage = "A descrição da transação é obrigatória.")]
         [MaxLength(10, ErrorMessage = "A descrição não pode exceder mais de 50 caracteres.")]
         public string Descricao { get; set; }
+
+        [Required]
+        public DateTime realizada_em { get; set; }
 
     }
 }

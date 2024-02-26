@@ -10,7 +10,7 @@ public class ExtratoController : ControllerBase
 {
 
     [HttpGet("{id}/extrato")]
-    public ActionResult BuscarExtrato([FromBody] Transacao transacao)
+    public ActionResult BuscarExtrato([FromBody] Extrato extrato)
     {
         return Ok("Extrato encontrado com sucesso.");
     }
